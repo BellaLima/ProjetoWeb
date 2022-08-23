@@ -22,7 +22,7 @@ Route::prefix('usuarios')->group(function(){
         return 'Mostrar detalhes usuario' .$id;
     });
 
-    Route::get('{id}/tags', function($id){
+    Route::get('/{id}/tags', function($id){
         return 'Tags do usuario' .$id;
 
     });
